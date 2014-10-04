@@ -1,9 +1,6 @@
 #Organize Twitter data into a spreadsheet
 #ID | Tweet Created | Tweet ScreenName | Tweet Text | Tweet Status Source
 require(twitteR)
-hashtag = "#gdgBangalore"
-#Number of tweets you would like to analyze
-n = 10
 
 tweet_func = function(hashtag,n){
   tweets = searchTwitter(hashtag,n)
@@ -19,4 +16,4 @@ tweet_func = function(hashtag,n){
   write.table(data_to_csv,file = "/home/kartik/Desktop/R-Statistical-Computing/twitteR/twitter_to_CSV.csv",sep = ",",)
 }
 
-tweet_func
+tweet_func("#gdg",10)
