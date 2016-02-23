@@ -60,4 +60,7 @@ d <- 1:100
 summary(d)
 
 # #Data Frame
-data.frame(1:100)
+var_df <- data.frame(1:100)
+
+# #For visualizing two-dimensional variables such as matrices and data frames
+View(var_df)
